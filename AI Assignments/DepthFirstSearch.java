@@ -1,10 +1,10 @@
 import java.util.*;
-class Graph
+class DepthFirstSearch
 {
 int V;
 LinkedList<Integer>[] adj;
 @SuppressWarnings("unchecked") 
-Graph(int V){
+DepthFirstSearch(int V){
 this.V = V;
 adj = new LinkedList[V];
 for (int i = 0; i < adj.length; i++)
@@ -41,7 +41,7 @@ stack.push(a); //push the top element to the stack
 }
 public static void main(String[] args)
 {
-Graph g = new Graph(6);
+DepthFirstSearch g = new DepthFirstSearch(6);
 g.addEdge(0, 1);
 g.addEdge(0, 2);
 g.addEdge(1, 0);
